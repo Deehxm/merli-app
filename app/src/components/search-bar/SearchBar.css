@@ -1,0 +1,43 @@
+.SearchBar {
+    width: 70%;
+    display: inline-flex;
+}
+
+.SearchBar #search-bar-logo {
+    background-image: url(https://http2.mlstatic.com/frontend-assets/ui-navigation/5.16.2/mercadolibre/logo__small@2x.png);
+    background-repeat: no-repeat;
+    background-size: 44px 31px;
+    width: 60px;
+    height: 32px;
+}
+
+.SearchBar div {
+    width: 95%;
+    display: inline-flex;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
+    border-radius: 2px;
+}
+
+.SearchBar input {
+    width: 100%;
+    padding: 6px;
+    font-size: 16px;
+    border: 0 rgba(0,0,0,.2);
+    border-radius: 2px 0 0 2px;
+}
+
+.SearchBar input:focus{
+    outline: 0;
+}
+
+.SearchBar button {
+    width: 35px;
+    border: none;
+    border-radius: 0 2px 2px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.SearchBar button:hover {
+    cursor: pointer;
+}

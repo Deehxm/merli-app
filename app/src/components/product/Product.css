@@ -1,0 +1,74 @@
+.Product {
+    background-color: #FFF;
+    display: flex;
+    height: 85%;
+    margin: 20px 15% 45px 15%;
+    border-radius: 4px;
+}
+
+.Product-col-left {
+    width: 70%;
+    height: 100%;
+    padding: 45px;
+}
+
+.Product-picture {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.Product-picture img {
+    width: 60%;
+    height: auto;
+}
+
+.Product-col-right {
+    padding: 15px 45px 45px 0;
+}
+
+.Product-col-right p {
+    font-size: 14px;
+    margin-block-end: 4px;
+}
+
+.Product-col-right h2{
+    margin-block-start: 0;
+}
+
+.Product-col-right button{
+    width: 100%;
+    height: 40px;
+    margin-top: 70px;
+    color: #FFF;
+    background-color: #3483FA;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    transition: box-shadow .25s ease-out,
+        background-color .2s ease-out;
+    box-shadow: 0 0 0 0 #fff;
+}
+
+.Product-col-right button:hover{
+    background-color: #2968C8;
+    cursor: pointer;
+}
+
+.Product-price {
+    overflow: visible;
+    display: inline-block;
+    vertical-align: text-bottom;
+    line-height: 1em;
+    font-size: 36px;
+}  
+  
+.Product-price * {
+    float: left;
+}
+
+.Product-price-cents {
+    font-size: .7em;
+    vertical-align: text-bottom;
+    line-height: 1em;
+    margin-left: .05em;
+}
