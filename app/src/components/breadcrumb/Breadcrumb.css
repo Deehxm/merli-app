@@ -1,0 +1,22 @@
+.Breadcrumb {
+  background-color: #EEE;
+  display: flex;
+  margin-left: 15%;
+  padding: 0;
+}
+
+.Breadcrumb li {
+  display: inline;
+  font-size: 14px;
+}
+
+.Breadcrumb li+li:before {
+  padding: 8px;
+  color: #333;
+  content: "/\00a0";
+}
+
+.Breadcrumb li a {
+  color: #333;
+  text-decoration: none;
+}

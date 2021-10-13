@@ -1,32 +1,24 @@
-import './App.css';
-import { SearchBar } from './components/search-bar/SearchBar'
-//import { Product } from './components/product/Product'
-import { Item } from './components/item/Item'
+import "./App.css";
+import { SearchBar } from "./components/search-bar/SearchBar";
+import { SearchResult } from "./pages/search-result/SearchResult";
+import { Product } from "./components/product/Product";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header>
-        <SearchBar onSearch={() => console.log(1)} />
-      </header>
-      <div>
-      <ul className="App-breadcrumb">
-          <li><a>Home</a></li>
-          <li><a>Pictures</a></li>
-          <li><a>Summer 15</a></li>
-          <li>Italy</li>
-        </ul>
-
-      <ul className="App-content">
-
-
-        <Item/>
-      </ul>
+    <Router>
+      <div className="App">
+        <header>
+          <SearchBar onSearch={() => console.log(1)} />
+        </header>
       </div>
 
-      {/*<Product />*/}
-        
-    </div>
+      <Switch>
+        <Route path="/" exact />
+        <Route path="/items" exact component={SearchResult} />
+        <Route path="/items/:id" exact component={Product} />
+      </Switch>
+    </Router>
   );
 }
 
