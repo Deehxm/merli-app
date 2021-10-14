@@ -9,10 +9,9 @@ function App() {
     <Router>
       <div className="App">
         <header>
-          <SearchBar onSearch={() => console.log(1)} />
+          <SearchBar />
         </header>
       </div>
-
       <Switch>
         <Route path="/" exact />
         <Route path="/items" exact component={SearchResult} />

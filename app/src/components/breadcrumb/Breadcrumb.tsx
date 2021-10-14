@@ -1,13 +1,12 @@
 import React from "react";
 import "./Breadcrumb.css"
 
-export const Breadcrumb: React.FC = () => {
+export const Breadcrumb: React.FC<{ categories?: string[] }> = ({ categories }) => {
   return (
-    <ul className="Breadcrumb">
-      <li><a>Home</a></li>
-      <li><a>Pictures</a></li>
-      <li><a>Summer 15</a></li>
-      <li><a>Summer 15</a></li>
-    </ul>
+    categories ? (
+      <ul className="Breadcrumb">
+        {categories.map((category, index) => { return <li key={index}>{category}</li> })}
+      </ul>
+    ) : (<></>)
   );
 }

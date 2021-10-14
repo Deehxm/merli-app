@@ -3,20 +3,24 @@
     display: flex;
     border-bottom: thin solid #EEE;
     padding: 20px;
-}
-
-.Item-picture img {
-    width: 60%;
-    height: auto;
+    height: 135px;
 }
 
 .Item-col-left {
-    width: 110px;
-    height: 110px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
     cursor: pointer;
+    max-width: 200px;
+    width: 200px;
+}
+
+.Item-col-left img{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 200px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
 }
 
 .Item-col-middle {
@@ -24,9 +28,10 @@
     padding: 10px 0px 0px 15px;
 }
 
-.Item-col-middle p {
+.Item-col-middle a {
     font-size: 16px;
-    cursor: pointer;
+    text-decoration: none;
+    color: #000;
 }
 
 .Item-price {
